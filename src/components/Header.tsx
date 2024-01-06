@@ -1,9 +1,6 @@
 const Header = () => {
   return (
-    <header className="w-full h-14 top-0 left-0 flex justify-between items-center text-xl">
-      {/* <div className="w-64 bg-gray-700 h-full flex items-center justify-center text-white font-sans cursor-pointer">
-7        <p>City Point Restaurant</p>
-      </div> */}
+    <header className="h-14 top-0 left-0 flex justify-between items-center text-xl transition-transform md:ml-60 ">
       <div className="h-full bg-gray-100 w-full flex justify-between items-center px-5 text-gray-700">
         <svg
           xmlns="http://www.w3.org/2000/svg"
