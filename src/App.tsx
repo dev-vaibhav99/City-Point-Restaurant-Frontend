@@ -1,14 +1,17 @@
 import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Menu from "./components/Menu";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainContent from "./MainContent";
+import LoginScreen from "./screens/auth/LoginScreen";
 
 function App() {
   return (
     <>
-      <Header />
-      <Menu />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" Component={LoginScreen} />
+          <Route path="/" Component={MainContent} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
